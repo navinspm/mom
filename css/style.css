@@ -1044,15 +1044,13 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 /*----------------------------------------------------*/
 /* fredration_annual_area */
 .fredration_annual_area {
-  display: block;
-  overflow: hidden;
-  padding: 150px 0 125px;
+late  overflow: hidden;
+  padding: 5px 0 0px;
 }
 .fredration_annual_area .fredration_inner {
   border: 1px solid #ecebeb;
   padding: 50px 44px 44px;
   margin: 0;
-  margin-bottom: 142px;
 }
 .fredration_annual_area .fredration_inner .fredration_text h4 {
   font: 400 18px/36px "Poppins", sans-serif;
@@ -1487,7 +1485,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .latest_causes_area {
   display: block;
   overflow: hidden;
-  padding: 135px 0;
+  padding: 10px 0;
 }
 .latest_causes_area .latest_causes_inner {
   padding-top: 90px;
