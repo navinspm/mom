@@ -2584,6 +2584,9 @@ late  overflow: hidden;
   display: block;
   padding-top: 8px;
 }
+.team_mg img{
+  height:350px;
+}
 .team_member_area .team_item .team_mg .hover_icons li a:hover, .team_member_area .team_item .team_mg .hover_icons li a:focus {
   color: rgba(0, 0, 0, 0.702);
 }
@@ -4490,6 +4493,10 @@ late  overflow: hidden;
   border-radius: 0;
   padding: 0 20px;
   padding-right: 0;
+}
+.footer_area
+{
+  background-color: #f7f7f7;
 }
 .shop_with_sidebar .shop_right_sidebar .input-group input.placeholder {
   color: #a7a4a4;
