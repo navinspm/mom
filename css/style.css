@@ -29,6 +29,7 @@ Table of Content:
 13/ Tab
 14/ Gallery  
 15/ Form  
+
 16/ Faq  
 17/ Shop 
 18/ Footer  
@@ -4507,4 +4508,9 @@ late  overflow: hidden;
 .shop_with_sidebar .shop_right_sidebar .input-group input::-moz-placeholder {
   color: #a7a4a4;
 }
+.footer_area .footer_inner .resources li a {
+    font: 400 16px/42px "Open Sans", sans-serif;
+    color: #787777;
+}
+
 .shop_with_sidebar .shop_right_sidebar .input-group input::-webkit-input-placehol
