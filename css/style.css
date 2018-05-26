@@ -2565,7 +2565,7 @@ late  overflow: hidden;
   right: 0;
   bottom: 0;
   display: block;
-  background: rgba(255, 149, 7, 0.729);
+  /*background: rgba(255, 149, 7, 0.729);*/
   z-index: 1;
   -webkit-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
