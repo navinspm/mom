@@ -61,6 +61,53 @@
             })
         }
     };
+
+     /* Main Slider js */
+    function blog_slider(){
+        if ( $('#blog_slider').length ){
+            $("#blog_slider").revolution({
+                sliderType:"standard",
+                sliderLayout:"auto",
+                delay:1000,
+                disableProgressBar:"off", 
+                navigation: {
+                    keyboardNavigation: "on",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 50,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    bullets: {
+                        enable: true,
+                        hide_onmobile: true,
+                        hide_under: 640,
+                        style: "zeus",
+                        hide_onleave: false,
+                        direction: "horizontal", 
+                        v_align: "bottom",
+                        h_offset: 0,
+                        v_offset: 48,
+                        space: 10, 
+                        tmp: '<span class="tp-bullet-image"></span><span class="tp-bullet-imageoverlay"></span><span class="tp-bullet-title">{{title}}</span>'
+                    }
+                },
+                responsiveLevels:[4096,1199,992,767,540],
+                gridwidth:[1170,1000,750,700,500],
+                gridheight:[830,830,650,500,500],
+                lazyType:"smart", 
+                fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                }
+            })
+        }
+    };
     
     //* Round Circle js
     $(".quick_help_need").each(function() {
@@ -509,14 +556,10 @@
 
     /*Function Calls*/ 
     new WOW().init();
-    main_slider (); 
+    main_slider ();
+    blog_slider ();  
     navbarFixed ();
-    counterUp ();
-    childrenCare ();
-    progressbar (); 
-    counDown ();
     gallery_isotope ();
-    datepicker ();
     selectmenu ();
     productValue ();
     scrollToTop ();
