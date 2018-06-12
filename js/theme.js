@@ -498,22 +498,6 @@
         })
     }; 
         
-    // Product value
-    function productValue() {
-        var inputVal = $("#product-value");
-        if (inputVal.length) {
-            $('#value-decrease').on('click', function () {
-                inputVal.html(function (i, val) {
-                    return val * 1 - 1
-                });
-            });
-            $('#value-increase').on('click', function () {
-                inputVal.html(function (i, val) {
-                    return val * 1 + 1
-                });
-            });
-        }
-    }
     
     // Scroll to top
     function scrollToTop() {
@@ -535,19 +519,33 @@
         }
     }
     
+function sharer(){
+    $("body").floatingSocialShare({
+    buttons: [
+      "facebook", "google-plus",  "pinterest","twitter",  "whatsapp"
+    ],
+    counter: false,
+    twitter_counter: false,
+    title: "More for Mankind (MOM) Foundation",
+    text: "share with: ",
+    url: "https://www.more4mankind.com",
+  place: "top-left"
+  });
+};
+
     // Preloader JS
     function preloader(){
         if( $('.preloader').length ){
             $(window).on('load', function() {
                 $('.preloader').fadeOut();
-                $('.preloader').delay(50).fadeOut('slow');  
+                $('.preloader').delay(10).fadeOut('slow');  
             })   
         }
     } 
 
     // Dissable right click
     $("body").on("contextmenu",function(e){
-        return false;
+        return true;
     }); 
     
     $('body').bind('cut copy paste', function (e) {
@@ -561,8 +559,8 @@
     navbarFixed ();
     gallery_isotope ();
     selectmenu ();
-    productValue ();
     scrollToTop ();
+    sharer();
     preloader();
     
 })(jQuery);
