@@ -131,29 +131,29 @@
           offset: 'bottom-in-view'
         });
     }); 
-    $(".latest_causes_area, .donations_details").each(function() {
-        $(this).waypoint(function() { 
-            //* smpie_chart
-            $('.smpie_chart').pieChart({
-                barColor: '#ff9e1c',
-                trackColor: '#dadada',
-                lineCap: 'butt',
-                size: 71, 
-                lineWidth: 9, 
-                onStep: function(from, to, percent) {
-                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
-                },
-                animate: {
-                    duration: 1500,
-                    enabled: true
-                },
-            });
+    // $(".latest_causes_area, .donations_details").each(function() {
+    //     $(this).waypoint(function() { 
+    //         //* smpie_chart
+    //         $('.smpie_chart').pieChart({
+    //             barColor: '#ff9e1c',
+    //             trackColor: '#dadada',
+    //             lineCap: 'butt',
+    //             size: 71, 
+    //             lineWidth: 9, 
+    //             onStep: function(from, to, percent) {
+    //                 $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+    //             },
+    //             animate: {
+    //                 duration: 1500,
+    //                 enabled: true
+    //             },
+    //         });
             
-        }, {
-          triggerOnce: true,
-          offset: 'bottom-in-view'
-        });
-    });
+    //     }, {
+    //       triggerOnce: true,
+    //       offset: 'bottom-in-view'
+    //     });
+    // });
     
     //* Counter Js 
     function counterUp(){
